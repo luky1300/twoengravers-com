@@ -1,21 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="About" />
+    <h1>About</h1>
+    <p>Two Engravers offers full-scale on-site design, engraving, cutting and marking services. 
+      Whether your project is small or large, simple or complex, we have the mindset, the skill, 
+      and the resources to complete it to your standard within the agreed time and budget. 
+      Please browse through other sections of our website to get a better feel of who we are and what we offer.</p>
+    <p>We approach every project individually and in the context of specific requirements. 
+      Our clients are often the driving force behind a new product or an expanded product line. 
+      Please do not hesitate to contact us to discuss your ideas. 
+      We are eager to work together and make new things happen!</p>
   </Layout>
 )
 

@@ -9,7 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import SocialMedia from './socialMedia'
 import Header from "./header"
+import Menu from "./menu"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,7 +28,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SocialMedia />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Menu />
       <div
         style={{
           margin: `0 auto`,
